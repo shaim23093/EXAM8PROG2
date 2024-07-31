@@ -1,0 +1,34 @@
+
+EXAMEN-Prog2
+
+A. Théorie
+
+1. Que signifie l’annotation @Override ?
+      @Override c'est pour dire que le classe qui herite l'autre classe abstract doit étre heriter le 
+       methode dant le classe abstract entant que hetiteur 
+
+ 2. Pourquoi est-ce qu’on a souvent besoin de redéfinir equals et hashCode ?
+
+    Deux objets égaux doivent avoir la même valeur de hachage tant qu'ils restent égaux mais deux objets non égaux n'ont pas l'obligation d'avoir des valeurs de hachage distinctes. Pour respecter ces deux règles , il est nécessaire de redéfinir la méthode hashCode() lorsque la méthode equals() est redéfinie.
+
+    3. Qu’est ce que le polymorphisme statique ?
+ poly c'est plusieur et morphe c'est forme alorse c'est_à- dire que polumorphe c'est plusieur forome ou
+ ancore meme methode mais parametre différent
+ comme exemple  ci-desous
+  public class Polymorphe {
+       String nom;
+       String age;
+       String passion;
+
+    public Polymorphe(String nom, String age) {
+        this.nom = nom;
+        this.age = age;
+    }
+
+    public Polymorphe(String nom, String age, String passion) {
+        this.nom = nom;
+        this.age = age;
+        this.passion = passion;
+    }
+} 
+     
